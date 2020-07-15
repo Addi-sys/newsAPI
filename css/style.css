@@ -1,1 +1,12 @@
-/* body{} */
+body {
+    background-color: aliceblue;
+}
+
+nav {
+    max-width: 1024px;
+    width: auto;
+}
+
+.header {
+    background-color: rgb(238, 237, 9, 0.8);
+}
