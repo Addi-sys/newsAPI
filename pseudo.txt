@@ -30,3 +30,22 @@ make file .env
 APIKEY=uteuk
 
 .gitignore (.env)
+
+
+author: "Science X staff"
+​​
+content: "An increase of 20 to 30 per cent of invasive non-native (alien) species would lead to dramatic future biodiversity loss worldwide. This is the conclusion of a study by an international team of resear… [+3891 chars]"
+​​
+description: "An increase of 20 to 30 per cent of invasive non-native (alien) species would lead to dramatic future biodiversity loss worldwide. This is the conclusion of a study by an international team of researchers led by Franz Essl and Bernd Lenzner from the Universit…"
+​​
+publishedAt: "2020-07-15T06:41:55Z"
+​​
+source: Object { id: null, name: "Phys.Org" }
+​​
+title: "Invasive alien species may soon cause dramatic global biodiversity loss - Phys.Org"
+​​
+url: "https://phys.org/news/2020-07-invasive-alien-species-global-biodiversity.html"
+​​
+urlToImage: "https://scx2.b-cdn.net/gfx/news/hires/2020/invasivealie.jpg"
+
+let publishedAt = moment(item['publishedAt']).fromNow()
