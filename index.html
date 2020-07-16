@@ -12,51 +12,69 @@
 </head>
 
 <body>
-    <nav id="nav" class="nav"></nav>
+    <!-- <nav id="nav" class="nav"> -->
     <header class="header d-flex align-items-center justify-content-center text-dark px-2">
         <div class="row container-fluid d-flex align-items-center">
             <div class="col-sm col-md-1"></div>
             <i class="fa fa-kiwi-bird"></i>
             <div class="col-4">
-                <h2 class="p-0 m-0 h2 text-bold">KiwiNews</h2>
+                <h2 class="text-bold">KiwiNews</h2>
             </div>
             <div class="col-1 col-md-3"></div>
-            <div class="col-6 col-md-3 mr-md-5 d-flex align-items-center">
-                <input type="text" class="form-control rounded-left" id="inlineFormInputGroup" placeholder="Search for topics">
+            <div class="col-6 col-md-3 d-flex align-items-center">
+                <input type="text" class="form-control rounded-left" id="search" placeholder="Search for topics">
                 <div class="input-group-append rounded-right">
-                    <button id="searchBtn" class="btn btn-secondary rounded-right"><i class="fas fa-search"></i></button>
+                    <button id="searchBtn" onclick="search()" class="btn btn-secondary rounded-right"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
     </header>
+    </nav>
 
     <section>
         <main class="container-fluid d-flex justify-content-center p-0">
-            <div class="row container-fluid m-0 px-0 px-md-5">
-                <div class="col-4 col-md-2 ml-0 ml-md-5">
-
+            <div class="newsArea row container-fluid" style="border:1px solid red">
+                <div class="col-4 col-md-2" style="border:1px solid red">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </button>
+                        <div id="categories" class="dropdown-menu" onchange="callApi()">
+                            <!-- <a class="dropdown-item" href="#"></a> -->
+                            <a class="dropdown-item" href="#">entertainment</a>
+                            <a class="dropdown-item" href="#">general</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">health</a>
+                            <a class="dropdown-item" href="#">science</a>
+                            <a class="dropdown-item" href="#">sports</a>
+                            <a class="dropdown-item" href="#">tech</a>
+                        </div>
+                    </div>
+                    <div class="sources">
+                        <h5>Sources:</h5>
+                        <a href="#">News 24</a>
+                        <a href="#">TimesLIVE</a>
+                        <a href="#">EWN</a>
+                        <a href="#">Auburn Citizen</a>
+                        <a href="#">Wheels24</a>
+                        <a href="#">Express</a>
+                        <a href="#">The South African</a>
+                    </div>
                 </div>
-                <div id="newsListArea" class="col-7 col-md-9 ml-1 mx-0 mx-sm-2 mr-0 mr-md-5 pl-2 pr-0 p-md-2 pr-0 container">
-                    <!-- <div class="card" style="width: 18rem;"> -->
-                    <!-- <div id="newsListArea" class="card-body"> -->
-                    <!-- <h5 class="card-title">Card title</h5> -->
-                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    <!-- <a href="#" class="card-link">Card link</a> -->
-                    <!-- </div> -->
-                    <!-- </div> -->
+                <div id="newsListArea">
+
                 </div>
             </div>
         </main>
     </section>
 
     <footer>
-
+        <a href="#" onclick="viewMore()">View More</a>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://momentjs.com/downloads/moment.js%22%3E"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
