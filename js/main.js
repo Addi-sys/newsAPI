@@ -5,7 +5,7 @@ let page = 1
 const callApi = async() => {
 
     let selectedCategory = document.getElementById("categories").value
-    let url = `https://newsapi.org/v2/top-headlines?country=za&category=${selectedCategory}&page=${page}&apiKey=e3354d322964457abf2789261b06ab1e`
+    let url = `https://newsapi.org/v2/top-headlines?country=za&category=${selectedCategory}&page=${page}&`
     let data = await fetch(url)
     let result = await data.json()
     newsList = newsList.concat(result.articles)
