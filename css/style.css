@@ -1,1 +1,29 @@
-/* body{} */
+    body {
+        background-color: aliceblue;
+    }
+    
+    .newsArea {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header {
+        text-align: center;
+        background-color: rgb(238, 237, 9, 0.8);
+    }
+    
+    .bottomCard {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container-fluid {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .sources {
+        display: flex;
+        flex-direction: column;
+    }
